@@ -126,3 +126,38 @@ header nav ul li a {
   border-radius: 10px;
   color: #2a2b67;
 }
+
+.section-one {
+  width: 100%;
+  height: max-content;
+  padding: 40px 0px 40px 0px;
+}
+
+.first-main-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  position: relative;
+}
+
+.fmc-one {
+  margin: 100px 30px 30px 100px;
+  display: flex;
+  flex-direction: column;
+  width: 420px;
+}
+
+.fmc-one p {
+  font-family: Plus Jakarta Sans;
+  text-align: center;
+  font-weight: bold;
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+.fmc-img {
+  width: 630px;
+  position: absolute;
+  right: 0px;
+  top: 0px;
+}
