@@ -7,12 +7,21 @@
 }
 
 @font-face {
-    font-family: Gilroy;
-    src: url(./Asset/Fonts/Gilroy-font.ttf);
+  font-family: Gilroy;
+  src: url(./Asset/Fonts/Gilroy-font.ttf);
+  font-family: Plus Jakarta Sans;
+  src: url(./Asset/Fonts/Plus_Jakarta_Sans/PlusJakartaSans-VariableFont_wght.ttf);
+
 }
 
 /* 🔝 Header Region 📝*/
 
+header {
+  max-width: 1440px;
+  margin-inline: auto;
+  background-color: #F2F4F7;
+  padding-bottom: 50px;
+}
 header nav {
   background-color: white;
   width: 100vw;
@@ -27,7 +36,7 @@ header nav {
 
   div {
     margin-left: auto;
-    background-color: #2A2B67;
+    background-color: #2a2b67;
     border-radius: 5px;
     padding: 10px 20px 10px 20px;
     color: white;
@@ -55,13 +64,65 @@ header nav ul li a {
   font-family: Plus Jakarta Sans;
 }
 
+.parent {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  /* border: 1px solid black; */
+}
+
 .hd-container {
-    margin-top: 200px;
-    margin-left: 200px;
-    border: 1px solid black;
-    width: 400px;
+  margin-top: 200px;
+  margin-left: 150px;
+  /* border: 1px solid black; */
+  width: 550px;
+  position: relative;
+}
+
+#curve-lines {
+  position: absolute;
+  left: 430px;
+  bottom: 240px;
+  width: 250px;
 }
 
 .hd-container h1 {
-    font-family: Gilroy;
+  font-family: Gilroy;
+  font-size: 60px;
+  color: #303073;
+  margin-bottom: 20px;
+}
+
+.hd-container p {
+  font-family: Plus Jakarta Sans;
+  font-size: 16px;
+  color: #475467;
+  margin-bottom: 20px;
+}
+
+ .parent .home-img {
+  position: relative;
+  width: 430px;
+  top: 20px;
+  left: 180px;
+}
+
+.btn-container {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+.btn-one {
+  padding: 10px 20px 10px 20px;
+  background-color: #2a2b67;
+  border-radius: 10px;
+  color: white;
+}
+
+.btn-two {
+  padding: 10px 20px 10px 20px;
+  outline: 1px solid #2a2b67;
+  border-radius: 10px;
+  color: #2a2b67;
 }
