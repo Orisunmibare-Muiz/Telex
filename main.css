@@ -235,7 +235,7 @@ span {
   display: flex;
   flex-direction: column;
   width: 100%;
-  border: 1px solid black;
+  /* border: 1px solid black; */
   padding: 30px 0px 0px 0px;
 }
 
@@ -257,17 +257,42 @@ span {
 .sec-four-fbox {
   display: flex;
   flex-direction: row;
-  padding: 40px 150px 0px 50px;
+  padding: 40px 100px 0px 50px;
 }
 
 .sec-four-fbox img {
-  width: 300px;
+  width: 280px;
 }
 
 .form-border {
-  border: 1px solid black;
+  /* border: 1px solid black; */
+  padding: 35px 50px 0px 150px;
+  width: 100%;
 }
 
-/* .form-border label {
+.form-border label {
+  display: block;
+  margin-bottom: 6px;
+  margin-top: 20px;
+  font-family: Plus Jakarta Sans;
+}
 
-} */
+input {
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 10px 10px;
+  border-radius: 5px;
+  outline: none;
+  border: 1px solid #E0E3E7;
+}
+
+.form-border button {
+  width: 100%;
+  margin-top: 40px;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  background-color: #2a2b67;
+  color: white;
+  padding: 10px 10px;
+}
