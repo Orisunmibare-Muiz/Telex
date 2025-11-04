@@ -204,7 +204,7 @@ header nav ul li a {
   /* border: 1px solid white; */
   width: 300px;
   height: 350px;
-  padding: 90px 20px 40px 20px;
+  padding: 80px 13px 40px 13px;
 }
 
 .asull {
@@ -217,6 +217,12 @@ header nav ul li a {
 .p-tag {
   font-size: 13px;
   text-align: center;
+  line-height: 20px;
+  font-family: Plus Jakarta Sans;
+}
+
+span {
+  font-weight: bold;
 }
 
 .sec-three-parent img {
@@ -224,3 +230,44 @@ header nav ul li a {
   width: 500px;
   right: 90px;
 }
+
+.section-four {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  border: 1px solid black;
+  padding: 30px 0px 0px 0px;
+}
+
+.section-four p {
+  text-align: center;
+  font-family: Plus Jakarta Sans;
+}
+
+.sec-four-btext {
+  font-weight: bold;
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+.sec-four-rtextc {
+  color: #444444;
+}
+
+.sec-four-fbox {
+  display: flex;
+  flex-direction: row;
+  padding: 40px 150px 0px 50px;
+}
+
+.sec-four-fbox img {
+  width: 300px;
+}
+
+.form-border {
+  border: 1px solid black;
+}
+
+/* .form-border label {
+
+} */
