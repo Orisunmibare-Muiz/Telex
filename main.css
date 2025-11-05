@@ -201,7 +201,6 @@ header nav ul li a {
 }
 
 .sec-three-cont {
-  /* border: 1px solid white; */
   width: 300px;
   height: 350px;
   padding: 80px 13px 40px 13px;
@@ -235,7 +234,6 @@ span {
   display: flex;
   flex-direction: column;
   width: 100%;
-  /* border: 1px solid black; */
   padding: 30px 0px 0px 0px;
 }
 
@@ -265,7 +263,6 @@ span {
 }
 
 .form-border {
-  /* border: 1px solid black; */
   padding: 35px 50px 0px 150px;
   width: 100%;
 }
@@ -301,7 +298,6 @@ input {
   width: 100%;
   display: flex;
   flex-direction: column;
-  /* border: 1px solid black; */
   align-items: center;
   padding: 80px 0px 0px 0px;
 }
@@ -376,15 +372,15 @@ input {
   flex-direction: row;
   width: 100%;
   background-color: #303073;
-  padding: 30px 50px 30px 100px;
+  padding: 5px 50px 5px 100px;
 }
 
 .sec-six-cont {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  width: 550px;
-  margin-right: 250px;
+  width: 700px;
+  margin-right: 50px;
 }
 .sec-six-cont h2 {
   color: white;
@@ -408,7 +404,7 @@ input {
 }
 
 .section-six img {
-  width: 300px;
+  width: 490px;
 }
 
 footer {
@@ -427,7 +423,6 @@ footer {
 .footer-cont-one {
   display: flex;
   flex-direction: column;
-  /* border: 1px solid black; */
   width: 200px;
   padding: 40px 30px;
   margin-right: 150px;
