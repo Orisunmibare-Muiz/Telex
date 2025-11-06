@@ -13,7 +13,6 @@
   src: url(./Asset/Fonts/Plus_Jakarta_Sans/PlusJakartaSans-VariableFont_wght.ttf);
   font-family: HORIZONTAL;
   src: url(./Asset/Fonts/fonnts.com-315630/fonts/fonnts.com-Horizontale.ttf);
-
 }
 body {
   max-width: 1440px;
@@ -25,7 +24,7 @@ body {
 header {
   max-width: 1440px;
   margin-inline: auto;
-  background-color: #F2F4F7;
+  background-color: #f2f4f7;
   padding-bottom: 50px;
 }
 header nav {
@@ -48,6 +47,7 @@ header nav {
     font-family: Plus Jakarta Sans;
     font-size: 12px;
   }
+  
 }
 
 header nav img {
@@ -69,6 +69,10 @@ header nav ul li a {
   font-family: Plus Jakarta Sans;
 }
 
+.drop-bar {
+  display: none;
+}
+
 .parent {
   display: flex;
   flex-direction: row;
@@ -84,7 +88,7 @@ header nav ul li a {
 
 #curve-lines {
   position: absolute;
-  left: 430px;
+  left: 400px;
   bottom: 240px;
   width: 250px;
 }
@@ -103,7 +107,7 @@ header nav ul li a {
   margin-bottom: 20px;
 }
 
- .parent .home-img {
+.parent .home-img {
   position: relative;
   width: 430px;
   top: 20px;
@@ -280,7 +284,7 @@ input {
   padding: 10px 10px;
   border-radius: 5px;
   outline: none;
-  border: 1px solid #E0E3E7;
+  border: 1px solid #e0e3e7;
 }
 
 .form-border button {
@@ -302,7 +306,7 @@ input {
   padding: 80px 0px 0px 0px;
 }
 
-.sf-text-one  {
+.sf-text-one {
   text-align: center;
   font-size: 30px;
   margin-bottom: 20px;
@@ -323,7 +327,6 @@ input {
   width: 650px;
   padding-bottom: 40px;
 }
-
 
 .boz {
   display: flex;
@@ -411,8 +414,7 @@ footer {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #C1C6CE;
-
+  background-color: #c1c6ce;
 }
 
 .footer-container {
@@ -447,7 +449,9 @@ table {
   margin-top: 40px;
 }
 
-table, tr, td {
+table,
+tr,
+td {
   border-collapse: collapse;
   padding: 30px 70px 3px 0px;
   font-family: Plus Jakarta Sans;
@@ -466,4 +470,44 @@ th {
   flex-direction: column;
   align-items: center;
   padding: 30px 0px;
+}
+
+@media (max-width: 480px) {
+  header {
+    max-width: 500px;
+    margin-inline: auto;
+  }
+
+  header nav {
+    max-width: 100vw;
+    border: 1px solid black;
+    padding-bottom: 0px;
+    padding: 5px 5px 5px 5px;
+
+    div {
+      display: none;
+    }
+  }
+
+  header nav img {
+    margin-right: 0px;
+    width: 70px;
+  }
+
+  header nav ul {
+    display: none;
+  }
+
+  .drop-bar {
+    display: flex;
+    border: 1px solid black;
+    padding: 3px;
+  }
+
+  .drop-bar div {
+    width: 100%;
+    height: 1px;
+    background-color: black;
+    margin-bottom: 3px;
+  }
 }
