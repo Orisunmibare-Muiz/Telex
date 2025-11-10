@@ -13,6 +13,8 @@
   src: url(./Asset/Fonts/Plus_Jakarta_Sans/PlusJakartaSans-VariableFont_wght.ttf);
   font-family: HORIZONTAL;
   src: url(./Asset/Fonts/fonnts.com-315630/fonts/fonnts.com-Horizontale.ttf);
+  font-family: Gilroy-Bold;
+  src: url(./Asset/Fonts/gilroy-bold-cufonfonts/Gilroy-Bold.ttf);
 }
 body {
   max-width: 1440px;
@@ -69,7 +71,7 @@ header nav ul li a {
   font-family: Plus Jakarta Sans;
 }
 
-.drop-bar {
+.hamburger {
   display: none;
 }
 
@@ -88,16 +90,20 @@ header nav ul li a {
 
 #curve-lines {
   position: absolute;
-  left: 400px;
+  left: 420px;
   bottom: 240px;
   width: 250px;
 }
 
 .hd-container h1 {
-  font-family: Gilroy;
+  font-family: Gilroy-Bold;
   font-size: 60px;
-  color: #303073;
+  color: #333379;
   margin-bottom: 20px;
+}
+
+.mobile-bg-img{ 
+  display: none;
 }
 
 .hd-container p {
@@ -125,6 +131,7 @@ header nav ul li a {
   background-color: #2a2b67;
   border-radius: 10px;
   color: white;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
 }
 
 .btn-two {
@@ -132,6 +139,7 @@ header nav ul li a {
   outline: 1px solid #2a2b67;
   border-radius: 10px;
   color: #2a2b67;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
 }
 
 .section-one {
@@ -159,7 +167,7 @@ header nav ul li a {
   text-align: center;
   font-weight: bold;
   font-size: 30px;
-  margin-bottom: 20px;
+  padding: 20px;
 }
 
 .fmc-img {
@@ -185,7 +193,7 @@ header nav ul li a {
 }
 
 .section-two img {
-  width: 1300px;
+  width: 900px;
   margin: auto;
 }
 
@@ -474,13 +482,12 @@ th {
 
 @media (max-width: 480px) {
   header {
-    max-width: 500px;
     margin-inline: auto;
+    width: 100%;
   }
 
   header nav {
     max-width: 100vw;
-    border: 1px solid black;
     padding-bottom: 0px;
     padding: 5px 5px 5px 5px;
 
@@ -498,16 +505,138 @@ th {
     display: none;
   }
 
-  .drop-bar {
+  .hamburger {
     display: flex;
-    border: 1px solid black;
-    padding: 3px;
+    width: 50px;
+    margin-left: auto;
   }
 
-  .drop-bar div {
-    width: 100%;
-    height: 1px;
-    background-color: black;
-    margin-bottom: 3px;
+  .parent{
+    flex-direction: column;
   }
-}
+
+  .hd-container {
+    margin-top: 0px;
+    margin-left: 0px;
+    padding: 40px 15px 20px 15px;
+    width: 100vw;
+    position: relative;
+    z-index: 1;
+  }
+
+  .hd-container h1 {
+    font-family: Gilroy-Bold;
+    font-size: 34px;
+  }
+
+  .hd-container p {
+    font-size: 12px;
+    font-weight: bold;
+  }
+
+  #curve-lines {
+    left: 250px;
+    top: 8px;
+    width: 143px;
+  }
+
+  .parent .home-img {
+    display: none;
+  }
+
+  .mobile-bg-img {
+    z-index: -1;
+    display: flex;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    opacity: 0.4;
+    height: 319px;
+    width: 300px;
+    background-image: url(./Asset/images/header-home-img.svg);
+    background-size: cover;
+    background-position: center;
+    filter: blur(3px);
+  }
+
+  .btn-one {
+    font-family: Plus Jakarta Sans;
+    font-weight: bold;
+    font-size: 15px;
+  }
+
+  .btn-two {
+    font-family: Plus Jakarta Sans;
+    font-weight: bold;
+    font-size: 15px;
+  }
+
+  .section-one {
+    padding: 0px 0px 0px 0px;
+  }
+
+  .first-main-container {
+    flex-direction: column;
+  }
+
+  .fmc-one {
+    width: 100%;
+    /* border: 1px solid black; */
+    margin: 0px 0px 0px 0px;
+  }
+
+  .fmc-one p  {
+    font-size: 25px;
+  }
+
+  .fmc-img {
+  display: none;
+  }
+
+  .section-two {
+    padding: 0px 0px 0px 0px;
+  }
+
+  .section-two p {
+    font-size: 20px;
+    margin-bottom: 10px;
+    margin-top: 15px;
+  }
+
+  .section-two img {
+    width: 100%;
+    /* height: 400px; */
+    margin: 0px;
+    /* border: 1px solid black; */
+  }
+  
+  .section-three {
+    /* border: 1px solid black; */
+    padding: 20px 0px 300px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .sec-three-parent {
+    flex-direction: column;
+    width: 100%;
+    /* border: 1px solid red; */
+    padding: 0px 0px 0px 0px;
+    width: fit-content;
+    /* padding: 40px; */
+  }
+  .sec-three-cont {
+    /* border: 1px solid black; */
+    width: 330px;
+    padding-left: 18px;
+  }
+
+  .sec-three-parent img {
+    right: 0px;
+    left: -8px;
+    top: 370px;
+    width: 350px;
+  }
+
+} 
