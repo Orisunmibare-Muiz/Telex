@@ -52,6 +52,7 @@ header nav {
 
   div:hover {
     background-color: #4749af;
+    cursor: pointer;
   }
   
 }
@@ -142,6 +143,7 @@ header nav ul li a {
   background-color: #4749af;
   transform: scale(1.05);
   transition: 0.5s;
+  cursor: pointer;
 }
 
 .btn-two {
@@ -157,6 +159,7 @@ header nav ul li a {
   background-color: rgba(144, 102, 4, 0.712);
   transform: scale(1.06);
   transition: 0.5s;
+  cursor: pointer;
 }
 
 .section-one {
