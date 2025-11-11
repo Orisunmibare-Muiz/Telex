@@ -672,8 +672,12 @@ th {
   }
 
   .sec-six-cont h2 {
-    margin-bottom: 0px;
+    margin-bottom: 10px;
     font-size: 20px;
+  }
+
+  .sec-six-cont p {
+    margin-bottom: 20px;
   }
 
   .section-six img {
