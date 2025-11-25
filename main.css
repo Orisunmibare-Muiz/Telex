@@ -54,7 +54,6 @@ header nav {
     background-color: #4749af;
     cursor: pointer;
   }
-  
 }
 
 header nav img {
@@ -107,7 +106,7 @@ header nav ul li a {
   margin-bottom: 20px;
 }
 
-.mobile-bg-img{ 
+.mobile-bg-img {
   display: none;
 }
 
@@ -136,7 +135,8 @@ header nav ul li a {
   background-color: #2a2b67;
   border-radius: 10px;
   color: white;
-  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+    rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
 }
 
 .btn-one:hover {
@@ -151,7 +151,8 @@ header nav ul li a {
   outline: 1px solid #2a2b67;
   border-radius: 10px;
   color: #2a2b67;
-  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+    rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
 }
 
 .btn-two:hover {
@@ -510,6 +511,7 @@ th {
     max-width: 100vw;
     padding-bottom: 0px;
     padding: 5px 5px 5px 5px;
+    position: relative;
 
     div {
       display: none;
@@ -523,15 +525,65 @@ th {
 
   header nav ul {
     display: none;
+    flex-direction: column;
+    top: 60px;
+    width: 100%;
+    text-align: center;
+    z-index: 10;
+    right: 0px;
+    position: absolute;
+    background-color: #2a2b67;
+    opacity: 10;
+    padding: 20px;
+  }
+  .dropDown {
+    display: flex;
+    flex-direction: column;
+    top: 60px;
+    width: 100%;
+    text-align: center;
+ 
+    background-color: #2a2b67;
+    opacity: 10;
+    gap: 30px;
+    height: 0px;
+    overflow-y: hidden;
+    transition: ease-in-out 0.5s all;
+
+    ul {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      gap: 30px;
+      margin-top: 30px;
+    }
+
+    a {
+      color: white;
+      font-weight: bolder;
+      font-size: 15px;
+      text-decoration: none;
+    }
+
+    div>p{
+      color: white;
+    }
   }
 
+  header nav ul li a:hover {
+    border-bottom: 2px solid white;
+  }
+  header nav ul.show {
+    display: flex;
+  }
   .hamburger {
     display: flex;
     width: 50px;
     margin-left: auto;
   }
 
-  .parent{
+  .parent {
     flex-direction: column;
   }
 
@@ -604,12 +656,12 @@ th {
     margin: 0px 0px 0px 0px;
   }
 
-  .fmc-one p  {
+  .fmc-one p {
     font-size: 25px;
   }
 
   .fmc-img {
-  display: none;
+    display: none;
   }
 
   .section-two {
@@ -626,7 +678,7 @@ th {
     width: 100%;
     margin: 0px;
   }
-  
+
   .section-three {
     padding: 20px 0px 300px 0px;
     display: flex;
@@ -661,7 +713,7 @@ th {
     padding: 0px 20px 0px 20px;
   }
 
-  .sec-four-fbox img  {
+  .sec-four-fbox img {
     margin: auto;
   }
 
@@ -713,7 +765,7 @@ th {
     margin-right: 10px;
     margin-top: 20px;
   }
-  
+
   .footer-cont-one img {
     margin-bottom: 20px;
   }
@@ -726,13 +778,15 @@ th {
     margin-top: 30px;
   }
 
-  table, tr, td, th  {
+  table,
+  tr,
+  td,
+  th {
     padding: 0px 15px 20px 0px;
     font-size: 12px;
   }
 
-  .last-footer-box  {
+  .last-footer-box {
     padding: 15px 0px;
   }
-
-} 
+}
